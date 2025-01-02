@@ -5,14 +5,22 @@
     <style>
         body {
             font-family: sans-serif;
-            margin: 20px;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://imgs.search.brave.com/i64RNf_R1kxky7SHxoaLUTQSe9_FxMhG2_GHaG2U8RU/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy9h/L2EyL0RSRE9fU2Vh/bC5wbmc');
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
         }
 
         .container {
             width: 800px;
-            margin: 0 auto;
+            margin: 50px auto;
             padding: 20px;
-            border: 1px solid #ccc;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
         h1 {
@@ -39,6 +47,11 @@
             border: none;
             border-radius: 3px;
             cursor: pointer;
+        }
+
+        .submit-container {
+            text-align: center;
+            margin-top: 20px;
         }
     </style>
 </head>
@@ -107,7 +120,6 @@
     <label for="signature">Signature of the Individual:</label>
     <br>
     <input type="text" id="signature" name="signature" style="width: 150px; display: inline-block;">
-
     <h2>RECOMMENDATION:</h2>
 
     <label for="student_name">Mr./Ms.</label>
@@ -148,7 +160,9 @@
     <p><b>Note:</b></p>
     <p>I. Please submit the pass three days in advance of its expiry for renewal at the gate office.</p>
     <p>II. The pass must be surrendered as soon as your tenure in SSPL is over.</p>
-
+    <div class="submit-container">
+        <button type="submit">Submit</button>
+    </div>
 </div>
 
 </body>
