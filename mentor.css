@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('https://imgs.search.brave.com/i64RNf_R1kxky7SHxoaLUTQSe9_FxMhG2_GHaG2U8RU/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy9h/L2EyL0RSRE9fU2Vh/bC5wbmc') no-repeat center center;
+    background-size: contain;
+    background-position: center center;
+    background-attachment: fixed;
+}
+.container {
+    max-width: 800px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.list {
+    margin-top: 20px;
+}
+
+.list h3 {
+    margin-bottom: 10px;
+}
+
+.list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.list ul li {
+    margin: 5px 0;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.feedback-section {
+    margin-top: 20px;
+}
+
+.feedback-section h4 {
+    margin-bottom: 10px;
+}
+
+.feedback-section select,
+.feedback-section textarea,
+.feedback-section button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.feedback-section button {
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+}
+
+.feedback-section button:hover {
+    background-color: #0056b3;
+}

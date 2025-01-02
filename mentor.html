@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentor Dashboard</title>
+    <link rel="stylesheet" href="mentor.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Mentor Dashboard</h2>
+    <div class="list">
+        <h3>Assigned Interns</h3>
+        <ul id="intern-list">
+        </ul>
+    </div>
+    <div class="feedback-section">
+        <h4>Provide Feedback</h4>
+        <select id="intern-select">
+            <option value="">Select Intern</option>
+        </select>
+        <textarea id="feedback-text" rows="4" placeholder="Provide feedback here..." disabled></textarea>
+        <button id="submit-feedback" onclick="submitFeedback()" disabled>Submit Feedback</button>
+    </div>
+</div>
+
+<script src="mentor.js"></script>
+
+</body>
+</html>

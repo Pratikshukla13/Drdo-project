@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Training Completion Report</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 20px;
+        }
+
+        .container {
+            width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Training Completion Report</h1>
+    <p>No. 1805/HRD/SPL</p>
+    <p>Dated: <input type="date" id="date" name="date" required> </p>
+
+
+    <label for="trainee_name">For: Mr./Ms.</label>
+    <input type="text" id="trainee_name" name="trainee_name" required>
+
+    <label for="student_of">Student of</label>
+    <input type="text" id="student_of" name="student_of" required>
+
+    <label for="division">Division</label>
+    <input type="text" id="division" name="division" required>
+
+    <p>Is attached to</p>
+    <label for="department">Department</label>
+    <input type="text" id="department" name="department" required>
+
+    <p>for practical training on</p>
+    <label for="training_topic">Training on</label>
+    <input type="text" id="training_topic" name="training_topic" required>
+
+    <p>In order to issue training certificate, kindly arrange to send a brief report on the work done
+    by the student during the training period at SSPL as per the format given below immediately after the
+    completion of training.</p>
+
+    <p>GO/DO HRD</p>
+    <p>Date:<input type="date" id="date" name="date" required> </p>
+
+
+    <h2>CERTIFICATE</h2>
+    <p>This is certify that Mr./Ms.</p>
+    <label for="trainee_name_certificate"></label>
+    <input type="text" id="name" name="name" required>
+    <label for="course">Student of (Course):</label>
+    <input type="text" id="trainee_name_certificate" name="trainee_name_certificate" required>
+    <p>of (Institute)</p>
+    <label for="institute"></label>
+    <input type="text" id="institute" name="institute" required>
+
+    <p>Has undergone practical training at Solid State Physics Laboratory, Timarpur, Delhi - 54</p>
+    <label for="training_start_date">From</label>
+    <input type="date" id="training_start_date" name="training_start_date" required>
+    <label for="training_end_date">to</label>
+    <input type="date" id="training_end_date" name="training_end_date" required>
+
+    <p>Under the guidance of</p>
+    <label for="guide_name">Guide Name</label>
+    <input type="text" id="guide_name" name="guide_name" required>
+    <label for="description">During training he/she</label>
+    <textarea id="description" name="description" rows="5"></textarea>
+    <p>The work and conduct of Mr./Ms.</p>
+    <label for="trainee_name_conduct"></label>
+    <input type="text" id="trainee_name_conduct" name="trainee_name_conduct" required>
+    <p>During his/her stay at SSPL was good. He/She was punctual and his/her attendance was</p>
+    <label for="attendance_percentage">Attendance Percentage:</label>
+    <input type="number" id="attendance_percentage" name="attendance_percentage" required min="0" max="100"> %
+
+    <p>*Brief report on the work done to be given.</p>
+
+    <label for="go_do_signature">Signature of GO/DO</label>
+    <br>
+    <input type="text" id="go_do_signature" name="go_do_signature" style="width: 150px; display: inline-block;">
+    <p>Date: <input type="text" id="date" name="date" style="width: 150px; display: inline-block;"> </p>
+
+    <h2>Important Instructions:</h2>
+    <ol>
+        <li>This form will be approved by the Group Officer/Division Officer only.</li>
+        <li>The Assignment completion report to be submitted to HRD in soft copy through LAN (Lotus) by their Guides
+        (Initiating Scientist) to HR.</li>
+        <li>The file name should be trainee's name & branch in PDF or Doc format only.</li>
+        <li>Gate pass/ I card will be surrendered to issuing authority (General Admin).(if issued)</li>
+        <li>After the submission of this form, the Certificate will be issued after 2-3 days (between 1400-1600 hrs.)</li>
+    </ol>
+
+    <label for="i_card_surrendered">I Card Surrendered:</label>
+    <input type="radio" id="yes" name="i_card_surrendered" value="Yes">
+    <label for="yes">Yes</label><input type="radio" id="no" name="i_card_surrendered" value="No">
+    <label for="no">No</label>
+
+    <label for="i_card_receiver_signature">Signature of I Card Receiver with Date:</label>
+    <br>
+    <input type="text" id="i_card_receiver_signature" name="i_card_receiver_signature" style="width: 150px; display: inline-block;">
+    <p>(From General Admin)</p>
+
+</div>
+
+</body>
+</html>

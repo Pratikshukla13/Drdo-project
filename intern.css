@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #007BFF url('https://imgs.search.brave.com/i64RNf_R1kxky7SHxoaLUTQSe9_FxMhG2_GHaG2U8RU/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy9h/L2EyL0RSRE9fU2Vh/bC5wbmc') no-repeat center center fixed;
+    background-size: contain;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+.container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 400px;
+}
+h2 {
+    margin-bottom: 20px;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+.hidden {
+    display: none;
+}
+#form-section {
+    margin-top: 20px;
+}
+#confirmation-message {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #28a745;
+}

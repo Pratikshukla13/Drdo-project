@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HR Dashboard</title>
+    <link rel="stylesheet" href="hr.css">
+</head>
+<body>
+    <div class="container">
+        <h2>HR Dashboard</h2>
+
+        <form id="add-mentor-form" class="form">
+            <h3>Register Mentor</h3>
+            <div class="form-group">
+                <input type="text" id="mentor-name" placeholder="Mentor Name" required>
+            </div>
+            <div class="form-group">
+                <input type="email" id="mentor-email" placeholder="Mentor Email" required>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn">Register Mentor</button>
+            </div>
+        </form>
+
+        <form id="add-intern-form" class="form">
+            <h3>Add Intern</h3>
+            <div class="form-group">
+                <input type="text" id="intern-name" placeholder="Intern Name" required>
+            </div>
+            <div class="form-group">
+                <select id="mentor-select" required>
+                    <option value="">Assign to Mentor</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn">Add Intern</button>
+            </div>
+        </form>
+        <div class="list">
+            <h3>Mentors and Assigned Interns</h3>
+            <ul id="mentor-list"></ul>
+        </div>
+    </div>
+    <script src="hr.js"></script>
+</body>
+</html>

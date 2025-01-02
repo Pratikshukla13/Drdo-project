@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Training/Internship Registration Form</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 20px;
+        }
+
+        .container {
+            width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Training/Internship Registration Form</h1>
+
+    <h2>Part 1: Personal Information</h2>
+
+    <label for="name">1. Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="age">2. Age (with DoB):</label>
+    <input type="text" id="age" name="age" required>
+
+    <label for="present_address">3. Address (Present):</label>
+    <textarea id="present_address" name="present_address" rows="4"></textarea>
+
+    <label for="permanent_address">3. Address (Permanent):</label>
+    <textarea id="permanent_address" name="permanent_address" rows="4"></textarea>
+
+    <label for="mobile_email">4. Mobile No. & Email ID:</label>
+    <input type="text" id="mobile_email" name="mobile_email" required>
+
+    <label for="qualification">5. Educational Qualification:</label>
+    <input type="text" id="qualification" name="qualification" required>
+
+    <label for="branch">5. Branch:</label>
+    <input type="text" id="branch" name="branch" required>
+
+    <label for="grades">6. Semester wise Grades/Marks Obtained:</label>
+    <textarea id="grades" name="grades" rows="4"></textarea>
+
+    <label for="family_members">7. Details of family members working in foreign organizations/Embassies:</label>
+    <textarea id="family_members" name="family_members" rows="4"></textarea>
+
+    <label for="work_experience">8. Have you ever worked with any organization in India or abroad?</label>
+    <textarea id="work_experience" name="work_experience" rows="4"></textarea>
+
+    <label for="drdo_experience">9. Have you ever worked with any of the DRDO Labs/Estts. earlier in any capacity?</label>
+    <textarea id="drdo_experience" name="drdo_experience" rows="4"></textarea>
+
+    <label for="aadhar">10. Aadhar No:</label>
+    <input type="text" id="aadhar" name="aadhar" required>
+
+    <h2>Part 2: Pass Request</h2>
+
+    <label for="to">To:</label>
+    <input type="text" id="to" name="to" value="The Director, SSPL, Delhi - 110054" readonly>
+
+    <label for="subject">Sub: Request for issue of temporary pass (with 3 photographs)</label>
+
+    <label for="father_name">S/o/D/o:</label>
+    <input type="text" id="father_name" name="father_name">
+
+    <label for="institution">Institution:</label>
+    <input type="text" id="institution" name="institution" required>
+
+    <label for="identification_marks">My identification marks is:</label>
+    <textarea id="identification_marks" name="identification_marks" rows="3"></textarea>
+
+    <p>I may please be issued a temporary entry pass.</p>
+
+    <p>Yours faithfully,</p>
+    <label for="signature">Signature of the Individual:</label>
+    <br>
+    <input type="text" id="signature" name="signature" style="width: 150px; display: inline-block;">
+
+    <h2>RECOMMENDATION:</h2>
+
+    <label for="student_name">Mr./Ms.</label>
+    <input type="text" id="student_name" name="student_name" required>
+    <label for="student_institution">student of</label>
+    <input type="text" id="student_institution" name="student_institution" required>
+    <p>has been permitted by the competent authority to undergo practical training / to carry out project work at SSPL for</p><label for="training_period">w.e.f.</label>
+    <input type="text" id="training_period" name="training_period" required>
+    <label for="training_duration">weeks / months</label>
+    <input type="text" id="training_duration" name="training_duration" required>
+    <p>He/She is attached to Dr./Mr./Ms. <input type="text" id="name"></p>
+
+    <label for="supervisor">Division for training / project work.</label>
+    <input type="text" id="supervisor" name="supervisor" required>
+
+    <label for="go_do_scientist_signature">Signature of the GO/DO Scientists & Date:</label>
+    <br>
+    <input type="text" id="go_do_scientist_signature" name="go_do_scientist_signature" style="width: 150px; display: inline-block;">
+
+    <label for="initiated_scientist_name">Name & signature of the Initiated Scientist & date:</label>
+    <br>
+    <input type="text" id="initiated_scientist_name" name="initiated_scientist_name" style="width: 150px; display: inline-block;">
+
+    <p>Name and Signature of Head HR & Date <input type="text" id="name"></p>
+
+    <label for="pass_no">The Pass No.</label>
+    <input type="text" id="pass_no" name="pass_no" required>
+    <label for="pass_issued_to">is issued to</label>
+    <input type="text" id="student_name" name="student_name" required>
+    <label for="pass_valid_from">From</label>
+    <input type="text" id="pass_valid_from" name="pass_valid_from" required>
+    <label for="pass_valid_to">to</label>
+    <input type="text" id="pass_valid_to" name="pass_valid_to" required>
+    
+
+    <p>Name and Signature of Security Officer <input type="text" id="name"></p>
+
+    <p><b>Note:</b></p>
+    <p>I. Please submit the pass three days in advance of its expiry for renewal at the gate office.</p>
+    <p>II. The pass must be surrendered as soon as your tenure in SSPL is over.</p>
+
+</div>
+
+</body>
+</html>

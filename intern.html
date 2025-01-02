@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intern Dashboard</title>
+    <link rel="stylesheet" href="intern.css">
+</head>
+<body>
+    <div id="app">
+        <div class="container">
+            <h2>Intern Dashboard</h2>
+
+            <div class="form-buttons">
+                <button id="registration-btn">Registration Form</button>
+                <button id="completion-btn">Completion Form</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        
+        document.getElementById("registration-btn").addEventListener("click", () => {
+            window.location.href = "regform.html";
+        });
+
+        document.getElementById("completion-btn").addEventListener("click", () => {
+            window.location.href = "compform.html";
+        });
+    </script>
+</body>
+</html>
