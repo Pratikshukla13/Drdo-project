@@ -5,17 +5,25 @@
     <style>
         body {
             font-family: sans-serif;
-            margin: 20px;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://imgs.search.brave.com/i64RNf_R1kxky7SHxoaLUTQSe9_FxMhG2_GHaG2U8RU/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy9h/L2EyL0RSRE9fU2Vh/bC5wbmc');
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
         }
 
         .container {
             width: 800px;
-            margin: 0 auto;
+            margin: 20px auto;
             padding: 20px;
-            border: 1px solid #ccc;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
-        h1 {
+        h1, h2 {
             text-align: center;
         }
 
@@ -24,7 +32,7 @@
             margin-bottom: 5px;
         }
 
-        input[type="text"], textarea {
+        input[type="text"], input[type="date"], input[type="number"], textarea {
             width: 100%;
             padding: 10px;
             margin-bottom: 15px;
@@ -40,6 +48,14 @@
             border-radius: 3px;
             cursor: pointer;
         }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        input[type="radio"] {
+            margin-right: 5px;
+        }
     </style>
 </head>
 <body>
@@ -48,7 +64,6 @@
     <h1>Training Completion Report</h1>
     <p>No. 1805/HRD/SPL</p>
     <p>Dated: <input type="date" id="date" name="date" required> </p>
-
 
     <label for="trainee_name">For: Mr./Ms.</label>
     <input type="text" id="trainee_name" name="trainee_name" required>
@@ -68,12 +83,11 @@
     <input type="text" id="training_topic" name="training_topic" required>
 
     <p>In order to issue training certificate, kindly arrange to send a brief report on the work done
-    by the student during the training period at SSPL as per the format given below immediately after the
-    completion of training.</p>
+        by the student during the training period at SSPL as per the format given below immediately after the
+        completion of training.</p>
 
     <p>GO/DO HRD</p>
     <p>Date:<input type="date" id="date" name="date" required> </p>
-
 
     <h2>CERTIFICATE</h2>
     <p>This is certify that Mr./Ms.</p>
@@ -114,7 +128,7 @@
     <ol>
         <li>This form will be approved by the Group Officer/Division Officer only.</li>
         <li>The Assignment completion report to be submitted to HRD in soft copy through LAN (Lotus) by their Guides
-        (Initiating Scientist) to HR.</li>
+            (Initiating Scientist) to HR.</li>
         <li>The file name should be trainee's name & branch in PDF or Doc format only.</li>
         <li>Gate pass/ I card will be surrendered to issuing authority (General Admin).(if issued)</li>
         <li>After the submission of this form, the Certificate will be issued after 2-3 days (between 1400-1600 hrs.)</li>
@@ -129,7 +143,7 @@
     <br>
     <input type="text" id="i_card_receiver_signature" name="i_card_receiver_signature" style="width: 150px; display: inline-block;">
     <p>(From General Admin)</p>
-
+    <button type="submit">Submit</button>
 </div>
 
 </body>
